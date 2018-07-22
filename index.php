@@ -9,15 +9,36 @@
 <body>
 
     <?php
-    $characterName = "John";
-    $characterAge = 35;
 
-    echo("
-        <p>There once was a man named $characterName <br>
-        He was $characterAge years old <br>
-        He really liked the name $characterName <br>
-        But didn't like being $characterAge</p>
-        ");
+        //STRINGS//
+    $example = "Hello World";
+
+    // turns string to all lowercase
+    echo strtolower($example);
+    // turns string to all uppercase
+    echo strtoupper($example);
+    //displays length of string
+    echo strlen($example);
+    //replaces the first word(first arg) with the second(second arg)
+    // in the given string(thrid arg)
+    echo str_replace("Hello", "Goodbye", $example);
+    echo substr($example,3 , 3);
+
+        //NUMBERS//
+    $num = 1;
+
+    //adding 1 to the number
+    $num++; // 2
+    //absolute value
+    $num = -100;
+    abs($num); // 100
+    //raising the number to the n power
+    $num = 2;
+    pow($num, 2); // 4
+    //square root of the number
+    $num = 9;
+    sqrt($num);
+
     ?>
 
 
